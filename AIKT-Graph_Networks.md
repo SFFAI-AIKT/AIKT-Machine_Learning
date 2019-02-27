@@ -1,16 +1,73 @@
 # AIKT-Graph_Networks
-
-- 空域方法 (Spatial Domain)  
-  - GNN: The Graph Neural Network Model  
-  - GG-NN: Gated Graph Sequence Nerual Networks  
-  - GCNN: Geodesic Convolutional Neural Networks on Riemannian Nanifolds  
-  - DCNN: Diffusion-Convolutional Neural Networks  
-  - ACNN: Learning Shape Correspondence with Anisotropic Convolutional Neural Networks  
-  - MoNet: Geometric Deep Learning on Graphs and Manifolds Using Mixture Model CNNs  
-  - GAT: Graph Attention Networks  
-  
-- 谱域方法 (Spectral Domain)  
-  - SCNN: Spectral Networks and Locally Connected Networks on Graphs  
-  - SmoothSCNN: Deep Convolutional Networks on Graph-Structured Data  
-  - ChebNet: Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering  
-  - GCN: Semi-supervised Classification with Graph Convolutional Networks  
+- 图神经网络 (Graph Neural Networks)
+  - Statement: the framwork of GNNs refers to survey: Graph Neural Networks: A Review of Methods and Applications.
+  - Survey 
+    - Graph Neural Networks: A Review of Methods and Applications
+    - Deep Learning on Graphs: A Survey
+    - A Comprehensive Survey on Graph Neural Networks
+  - Graph Types
+    - Homogeneous Graph
+      - Instances: Citation networks (Citeseer, Cora, Pubmed), Reddit, PPI, Traffic networks, etc.
+      - Methods: GCN, GAT, GraphSAGE, etc.
+    - Heterogeneous Graph
+      - Instances: Knowledge Graphs, Moleculars, AIFB, MUTAG, BGS, AM, IMDB, DBLP, SLAP, etc.
+      - Methods: R-GCN, G2S, GraphInception, etc.
+  - Propagation Steps 
+    - Convolutional Aggregator (Graph Convolutional Networks)
+      - Spectral Methods
+        - SCNN: Spectral networks and locally connected networks on graphs
+        - SmoothSCNN: Deep convolutional networks on graph-structured data
+        - ChebNet: Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering
+        - GCN: Semi-supervised classification with graph convolutional networks
+      - Spactial Methods
+        - GNN: The graph neural network model
+        - GG-NN: Gated Graph Sequence Neural Networks
+        - GCNN: Geodesic convolutional neural networks on Riemannian manifolds
+        - DCNN: Diffusion-Convolutional Neural Networks
+        - ACNN: Learning shape correspondence with anisotropic convolutional neural networks
+        - MoNet: Geometric deep learning on graphs and manifolds using mixture model CNNs
+    - Attention Aggregator
+      - GAT: Graph attention networks
+    - Gate Updater
+      - GRU: Gated Graph Neural Networks
+      - LSTM: Graph LSTM
+    - Skip connection
+      - Highway GNN
+      - Jump Knowledge Network
+  - Traing Methods
+    - Neighborhood Sampling
+      - GraphSAGE: Inductive Representation Learning on Large Graphs
+      - FastGCN: Fast Learning with Graph Convolutional Networks via Importance Sampling
+    - Receptive Field Control
+      - ControlVariate: Stochastic Training of Graph Convolutional Networks with Variance Reduction
+    - Boosting
+      - Co-training GCN: Deeper insights into graph convolutional networks for semi-supervised learning
+      - Self-training GCN: Deeper insights into graph convolutional networks for semi-supervised learning
+  - Applications
+    - Structural Scenarios
+      - Physics
+        - Interaction Networks: Interaction networks for learning about objects, relations and physics
+        - Graph networks as learnable physics engines for inference and control
+      - Chemistry and Biology
+        - Molecular Fingerprints: Convolutional networks on graphs for learning molecular ﬁngerprints
+        - Protein Interface Prediction: Protein interface prediction using graph convolutional networks
+      - Knowledge graph
+        - Knowledge transfer for out-of-knowledge-base entities:A graph neural network approach
+        - SACN: End-to-end Structure-Aware Convolutional Networks for Knowledge Base Completion
+    - Non-structural Scenarios
+      - Image
+        - Dynamic graph cnn for learning on point clouds
+        - Iterative visual reasoning beyond convolutions
+      - Text
+        - Learning to represent programs with graphs
+        - Gated graph sequence neural networks
+      - Programming source code
+        - Sentence-state LSTM for text representation
+    - Other Scenarios
+      - Generative Models
+        - NetGAN: Generating graphs via random walks
+        - GraphRNN: Generating realistic graphs with deep auto-regressive models
+        - MolGAN: An implicit generative model for small molecular graphs
+      - Combinatorial Optimization 
+        - Neural combinatorial optimization with reinforcement learning
+        - Learning combinatorial optimization algorithms over graphs
