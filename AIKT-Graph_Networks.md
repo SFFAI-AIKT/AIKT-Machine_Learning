@@ -1,6 +1,7 @@
 # AIKT-Graph_Networks
 - 图神经网络 (Graph Neural Networks)
   - [Awesome resources on Graph Neural Networks](https://github.com/nnzhan/Awesome-Graph-Neural-Networks) is a collection of resources related with graph neural networks, which is made by [nnzhan](https://github.com/nnzhan).
+  - [Must-read papers on GNN](https://github.com/thunlp/GNNPapers) is a GNN paper collection of THUNLP.
   - Statement: the framwork of GNNs refers to survey: Graph Neural Networks: A Review of Methods and Applications.
   - Survey 
     - Graph Neural Networks: A Review of Methods and Applications
